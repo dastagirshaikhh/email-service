@@ -31,7 +31,7 @@ export async function sendEmail({
 }) {
     // Retrieve environment variables for SMTP configuration
     const smtpUsername = process.env.SMTP_USERNAME;
-    const smtpPassword = process.env.SMPT_PASSWORD; // Corrected typo from SMPT_PASSWORD to SMTP_PASSWORD if it was a typo in .env
+    const smtpPassword = process.env.SMPT_PASSWORD;
     const mailReceiverAddress = process.env.MAIL_RECIEVER_ADDRESS;
 
     // Basic validation for environment variables

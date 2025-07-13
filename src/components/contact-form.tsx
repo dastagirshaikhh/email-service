@@ -38,8 +38,8 @@ const formSchema = z.object({
     attachments: z.array(attachmentSchema).optional(), // Optional array of attachments
 })
 
-// Define the LoginForm component
-export function LoginForm({
+// Define the ContactForm component
+export function ContactForm({
     className,
     ...props
 }: React.ComponentProps<"div">) {
@@ -140,7 +140,7 @@ export function LoginForm({
     return (
         <div className={cn("flex flex-col gap-6", className)} {...props}>
             <Card className="rounded-xl shadow-lg"> {/* Added rounded corners and shadow for better aesthetics */}
-                <CardHeader className="p-6">
+                <CardHeader>
                     <CardTitle className="text-2xl font-bold text-gray-800">Email and Message</CardTitle>
                     <CardDescription className="text-gray-600">
                         Enter your email and your message below. We will get back to you as soon as possible.
@@ -200,7 +200,7 @@ export function LoginForm({
                                         type="file"
                                         multiple // Allow multiple file selection
                                         onChange={handleFileChange}
-                                        className="rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" // Styled file input
+                                        className="rounded-md border-gray-300 focus:border-gray-300 focus:ring-gray-500"
                                     />
                                 </FormControl>
                                 {selectedFiles.length > 0 && (
@@ -228,7 +228,8 @@ export function LoginForm({
                             {/* Submit Button */}
                             <Button
                                 type="submit"
-                                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-md" // Styled button
+                                className="w-full"
+                                // className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-md" // Styled button
                                 disabled={isLoading} // Disable button when loading
                             >
                                 {isLoading ? "Sending..." : "Submit"} {/* Change button text based on loading state */}
