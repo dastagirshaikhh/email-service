@@ -40,7 +40,7 @@ A production-ready contact form built with **Next.js**, featuring client-side va
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/my-contact-form.git](https://github.com/dastagirshaikhh/email-service.git)
+git clone https://github.com/dastagirshaikhh/email-service.git
 cd my-contact-form
 ````
 
