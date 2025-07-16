@@ -118,7 +118,7 @@ Feel free to open issues, pull requests, or fork this project to improve it.
 
 ## 💌 Contact
 
-If you face any issues, feel free to [open an issue](https://github.com/your-username/my-contact-form/issues).
+If you face any issues, feel free to [open an issue](https://github.com/dastagirshaikhh/email-service/issues).
 
 ---
 
