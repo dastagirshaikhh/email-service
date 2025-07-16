@@ -118,10 +118,8 @@ Feel free to open issues, pull requests, or fork this project to improve it.
 
 ## 💌 Contact
 
-If you face any issues, feel free to [open an issue](https://github.com/your-username/my-contact-form/issues) or contact me at **[your-gmail-email@gmail.com](mailto:your-gmail-email@gmail.com)**.
+If you face any issues, feel free to [open an issue](https://github.com/your-username/my-contact-form/issues).
 
 ---
 
 > Built with 💖 using Next.js, Tailwind, and a lot of caffeine.
-
-```
