@@ -139,7 +139,7 @@ export function ContactForm({
 
     return (
         <div className={cn("flex flex-col gap-6", className)} {...props}>
-            <Card className="rounded-xl shadow-lg"> {/* Added rounded corners and shadow for better aesthetics */}
+            <Card className="rounded-xl shadow-lg">
                 <CardHeader>
                     <CardTitle className="text-2xl font-bold text-gray-800">Email and Message</CardTitle>
                     <CardDescription className="text-gray-600">
@@ -149,7 +149,7 @@ export function ContactForm({
                 <CardContent className="p-6 pt-0">
                     {/* Form component from shadcn/ui, connected to react-hook-form instance */}
                     <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6"> {/* Added space-y-6 for consistent vertical spacing */}
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                             {/* FormField for Email Input */}
                             <FormField
                                 control={form.control}
@@ -229,7 +229,6 @@ export function ContactForm({
                             <Button
                                 type="submit"
                                 className="w-full"
-                                // className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-md" // Styled button
                                 disabled={isLoading} // Disable button when loading
                             >
                                 {isLoading ? "Sending..." : "Submit"} {/* Change button text based on loading state */}

@@ -1,8 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📬 Next.js Contact Form with File Attachments
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black?logo=next.js)](https://nextjs.org/)
+[![React Hook Form](https://img.shields.io/badge/React--Hook--Form-v7-blue?logo=react)](https://react-hook-form.com/)
+[![Zod](https://img.shields.io/badge/Zod-Schema%20Validation-purple)](https://zod.dev/)
+[![Nodemailer](https://img.shields.io/badge/Nodemailer-Email-green)](https://nodemailer.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Framework-38b2ac?logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-First, run the development server:
+A production-ready contact form built with **Next.js**, featuring client-side validation, server-side email delivery, and multi-file attachment support.
+
+---
+
+## 🚀 Features
+
+- **Next.js 14+:** Server Actions for secure backend logic.
+- **React Hook Form:** Efficient and flexible form state management.
+- **Zod:** Type-safe schema validation.
+- **Nodemailer:** Send emails via SMTP.
+- **Multi-file Uploads:** Supports images, PDFs, and more.
+- **File Validation:** File size check before upload.
+- **User Feedback:** Loading, error, and success states.
+- **Tailwind CSS + Shadcn/UI:** Customizable and modern UI components.
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [Nodemailer](https://nodemailer.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn/UI](https://ui.shadcn.com/)
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/my-contact-form.git
+cd my-contact-form
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Initialize Shadcn/UI (if not already done)
+
+```bash
+npx shadcn-ui@latest init
+npx shadcn-ui@latest add button card form input textarea
+```
+
+### 4. Set Up Environment Variables
+
+Create a `.env.local` file in the root:
+
+```env
+SMTP_USERNAME=your-gmail-email@gmail.com
+SMPT_PASSWORD=your-google-app-password
+MAIL_RECIEVER_ADDRESS=your-receiving-email@example.com
+```
+
+#### 🔐 How to Get a Google App Password (Gmail)
+
+1. Go to [Google Account Security](https://myaccount.google.com/security)
+2. Enable **2-Step Verification**.
+3. Access **App Passwords** → Choose app "Mail", device "Other", and name it.
+4. Generate and copy the **16-character password**.
+
+Use that password as your `SMPT_PASSWORD`.
+
+### 5. Run the Development Server
 
 ```bash
 npm run dev
@@ -10,27 +88,40 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to use the contact form.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+.
+├── app/
+│   └── page.tsx              # Main page rendering the contact form
+├── components/
+│   └── contact-form.tsx      # Client-side form component
+├── actions/
+│   └── sendEmail.ts          # Server Action to send emails using Nodemailer
+├── .env.local                # Environment variables for SMTP and mail config
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🙌 Contribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feel free to open issues, pull requests, or fork this project to improve it.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💌 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you face any issues, feel free to [open an issue](https://github.com/your-username/my-contact-form/issues) or contact me at **[your-gmail-email@gmail.com](mailto:your-gmail-email@gmail.com)**.
+
+---
+
+> Built with 💖 using Next.js, Tailwind, and a lot of caffeine.
+
+```
